@@ -38,13 +38,13 @@ func new --name classify --template "HTTP trigger"
 
 3. Copy the deployment code 
 ```
-git clone https://github.com/gopitk/functions-deploy-onnx.git ~/functions-deploy-onnx
+git clone https://github.com/Azure-Samples/functions-deploy-pytorch-onnx.git ~/functions-deploy-pytorch-onnx
 
 # Copy the deployment sample to function app
-cp -r ~/functions-deploy-onnx/start ..
+cp -r ~/functions-deploy-pytorch-onnx/start ..
 
 ```
-The main files are **[__init__.py](https://github.com/gopitk/functions-deploy-onnx/blob/master/start/classify/__init__.py)** and **[predictonnx.py](https://github.com/gopitk/functions-deploy-onnx/blob/master/start/classify/predictonnx.py)** in ```start/classify``` dirtectory. The one in the repo works for the Bear detector example in fast.ai. It takes input from the HTTP GET request in "img" parameter which is a URL to an image which will be run through the model for prediction of the type of bear.  You can adapt the same easily for deploying other models.
+The main files are **[__init__.py](https://github.com/Azure-Samples/functions-deploy-pytorch-onnx/blob/main/start/classify/__init__.py)** and **[predictonnx.py](https://github.com/Azure-Samples/functions-deploy-pytorch-onnx/blob/main/start/classify/predictonnx.py)** in ```start/classify``` dirtectory. The one in the repo works for the Bear detector example in fast.ai. It takes input from the HTTP GET request in "img" parameter which is a URL to an image which will be run through the model for prediction of the type of bear.  You can adapt the same easily for deploying other models.
 
 4. Create and activate Python virtualenv to setup ONNX runtime along with dependencies
 
