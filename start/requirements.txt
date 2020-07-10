@@ -1,0 +1,4 @@
+azure-functions
+requests
+pillow
+onnxruntime
