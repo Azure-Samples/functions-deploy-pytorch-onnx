@@ -55,7 +55,7 @@ source .venv/bin/activate
 pip install --no-cache-dir -r requirements.txt  
 ```
 
-5. Copy your ONNX model file (which should have a name model.onnx)  built from training the Pytorch model  and converting to ONNX into  the "start/classify" directory within your Function App project. This has been tested with the Bear detector model from fast.ai course. Here is code to generate the model.onnx file for this fast.ai (or Pytorch) model.
+5. Copy your ONNX model file (which should have a name model.onnx)  built from training the PyTorch model  and converting to ONNX into  the "start/classify" directory within your Function App project. This has been tested with the Bear detector model from fast.ai course. Here is code to generate the model.onnx file for this fast.ai (or PyTorch) model.
 
 ```
 dummy_input = torch.randn(1, 3, 224, 224, device='cuda')
